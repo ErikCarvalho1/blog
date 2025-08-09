@@ -1,101 +1,229 @@
 @import url(reset.css);
 
-html{
+html {
     scroll-behavior: smooth;
 }
-header h1{
-    font-size: 50px;
-    color: aqua;
-    justify-self: center;
+
+body { 
+    font-family: 'Lucida Sans', sans-serif;
+    color: #1b1a1a; 
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet; 
+    margin: 0;
 }
 
-header{
-    background-color: black;
+/* Menu */
+.menu {
+    
+    background-color: #f3f2f288;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 100px;
+    
 }
 
 
-nav ul{
-    justify-self: center;
+
+header h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-family: Impact, fantasy;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul {
+    
+    color: #000;
     list-style: none; 
     margin: 1rem 0 0 0;
+    padding: 0;
     display: flex;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-nav ul li{
-    margin: 0 1rem;
-    
-    
-}
-.principal{
-max-width: 90%;  /*largura maxima para o conteudo*/
-margin: 0 auto;
-background-color: #ffffff;
-padding: 0 20px;
-  
-}
-main{
-    min-width: 100vh;    
+/* Banner com background */
+.principal {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/corgi-6673343_640.jpg");
+    background-size: cover;       /* preenche sem distorcer */
+    background-position: center;  /* centraliza a imagem */
 }
 
-
-body{ 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff; 
+/* Conteúdo */
+.container {
     display: flex;
-    flex-direction: column;/*organiza os filhos em uma coluna: header, main e footer*/
-    background-color: blueviolet; 
-    min-width: 100vh;    
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 1rem;
+    padding-bottom: 100px; /* para não cobrir o conteúdo com footer */
 }
-
-body h2{
+.principal .texto{
+    
+    align-content: center;
     justify-self: center;
-    color: black;
-    font-size: 50px;
-    margin-top: 5%;
-
-}
-.principal img{        
+    display: flex;
+    background-color: #e7e7e750;
+    border-radius: 20px;
     width: 600px;
-    height: 200px;
+    margin-top: 50px ;
+   
+    
 
 }
-.principal{
-    margin-top: 100px;
-    justify-self: center;  
-
-}
-.imagem1 p{
-    justify-self: center;
-}
-
-footer{
-        
-        background-color: aqua;
-        padding: 10px;
-}
-
+.texo2 h1{
 
     
-    .imagem2 img{        
-    width: 200px;
+}
+.texto p {
+    display: flex;
+     color: black;
+     display: flex;
+     align-items: center;     /* vertical */
+     height: 200px; 
+   font-family: 'Apple Chancery', cursive;
+    padding: 15px; /* espaçamento interno */
+    text-align: center;
+    
+
+}
+.texto2{
+       align-content: center;
+    justify-self: center;
+    display: flex;
+    background-color: #e7e7e750;
+    border-radius: 20px;
+    width: 300px;
     height: 200px;
-
+    margin-top: 200px ;
 }
-.imagem2{
-    margin-top: 100px;
-    padding: 20px;  }
-
-
-.imagens img{
-    width: 200px;
-
+.texto2 p{
+    color: #000;
+     border-radius: 10px; /* cantos arredondados */
+    padding: 15px; /* espaçamento interno */
+    max-width: 300px; 
+    text-align: center;
 }
 
+.texto2 h1{
+     border-radius: 10xp;
+     font-family: Impact, fantasy;
+     color: #000000;
+    text-align: center;
+}
+.dog-pescoco section{
 
+    display: flex;
+    background-color: #ffffffb7;
+    width: 50px;          
+    margin: 10px auto;  
+    text-decoration:  none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+.dog-pescoco a {
+    color: #000;
+    text-decoration: none;
+}
+.dog-triste a{
+    color: #000;
+    text-decoration: none;
+}
+.dog-triste section{
+      display: flex;
+    background-color: #ffffffb7;
+    width: 50px;          
+    margin: 10px auto;  
+    text-decoration:  none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+.dog-feliz a{
+    text-decoration: none;
+    color: #000;
+}
+.dog-feliz section{
+      display: flex;
+     
+    background-color: #ffffffb7;
+    width: 50px;          
+    margin: 10px auto;  
+    text-decoration:  none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+/* Galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.galeria > div {
+    background: rgba(255, 255, 255, 0.274);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
 
+.galeria img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
 
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(43, 44, 44, 0.329);
+    text-align: center;
+    
+    padding: 10px;
+}
+footer .copyright{
+    color: aliceblue;
+    
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .principal {
+        height: 250px;
+    }
+    .galeria img {
+        max-width: 150px;
+    }
+}
 
-
+@media (max-width: 480px) {
+    .principal {
+        height: 200px;
+    }
+    .galeria img {
+        max-width: 120px;
+    }
+}
+.invisivel{
+    margin-top: 20px;
+    color: #00000000;
+}
