@@ -36,6 +36,7 @@ nav ul li a{
 nav ul {
     
     color: #000;
+
     list-style: none; 
     margin: 1rem 0 0 0;
     padding: 0;
@@ -47,6 +48,10 @@ nav ul {
 
 /* Banner com background */
 .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 400px;
     background-image: url("../images/corgi-6673343_640.jpg");
@@ -63,23 +68,18 @@ nav ul {
     padding: 1rem;
     padding-bottom: 100px; /* para não cobrir o conteúdo com footer */
 }
+
 .principal .texto{
+   
     
-    align-content: center;
     justify-self: center;
     display: flex;
     background-color: #e7e7e750;
     border-radius: 20px;
     width: 600px;
-    margin-top: 50px ;
-   
-    
 
 }
-.texo2 h1{
 
-    
-}
 .texto p {
     display: flex;
      color: black;
@@ -89,6 +89,7 @@ nav ul {
    font-family: 'Apple Chancery', cursive;
     padding: 15px; /* espaçamento interno */
     text-align: center;
+    
     
 
 }

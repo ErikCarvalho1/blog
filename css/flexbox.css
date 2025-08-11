@@ -1,0 +1,29 @@
+@import url(reset.css);
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    
+}
+header .menu{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    align-items: center;
+   
+    
+}
+header .menu nav ul {
+  
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+
+}
+nav{
+    padding: 0;
+}
+header h1{
+
+}
